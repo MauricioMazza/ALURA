@@ -1,13 +1,18 @@
-var paciente = document.querySelector('#primeiro-paciente')
+var pacientes = document.querySelectorAll('.paciente')
 
-var tdPeso = paciente.querySelector('.info-peso')
-var tdAltura = paciente.querySelector('.info-altura')
+for(var i = 0 ; i < pacientes.length ; i++) {
 
-var peso = tdPeso.textContent
-var altura = tdAltura.textContent
+    var paciente = pacientes[i]
 
-var imc = peso / (altura * altura)
+    var tdPeso = paciente.querySelector('.info-peso')
+    var peso = tdPeso.textContent
 
-var tdImc = paciente.querySelector('.info-imc')
+    var tdAltura = paciente.querySelector('.info-altura')
+    var altura = tdAltura.textContent
 
-tdImc.textContent = imc
+    var tdImc = paciente.querySelector('.info-imc')
+    
+    var imc = peso / (altura * altura)
+
+    tdImc.textContent = imc.toFixed(1)
+}
