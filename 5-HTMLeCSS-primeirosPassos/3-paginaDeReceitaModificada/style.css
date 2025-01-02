@@ -14,8 +14,8 @@ body {
 
 h2 {    
     background-color: #B3A742;    
-    /*background: -webkit-linear-gradient(top, #8a7e5bc4, #e0cc7c 30%);*/
-    background-image:linear-gradient( to bottom,#8a7e5bc4, #e0cc7c 30% );
+    /*background: -webkit-linear-gradient(top, #8a7e5bc4, #e0cc7c 30%); - configuração curso da Alura - */
+    background-image:linear-gradient( to bottom,#8a7e5bc4, #e0cc7c 30% ); /*cofiguração curso do Guanabara*/
     border-radius: 15px;
     padding:5px;
     padding-left: 15px;
@@ -49,20 +49,6 @@ tbody {
     }
 }
 
-a {
-    margin-right: 50px;
-    text-decoration: none;
-    color: #998c1b;
-    font-weight: bold;
-}
-
-nav {
-    background-color: #f1dd8b;
-    padding: 20px;
-    //padding-left: 100px;
-    text-align: center;
-}
-
 figure {
 background-color: white;
 width: 370px;
@@ -71,7 +57,41 @@ text-align:center;
 box-shadow:3px 3px 3px rgba(0, 0, 0, 0.4);
 margin: auto;
 font-family: "Vibur", serif;
-
-
-
 }
+
+#conteudo {
+    float: right;
+    width: 740px;
+}
+
+a {
+    margin-right: 50px;
+    text-decoration: none;
+    color: black;
+    /*font-weight: bold;*/
+}
+
+nav {
+    float: left;
+    width: 200px;
+    
+    /*background-color: #f1dd8b;
+    padding: 20px;
+    //padding-left: 100px;
+    text-align: center; */
+}
+
+nav ul li {
+    background-color: #C7BE9B;
+    margin-bottom: 3px;
+}
+
+nav ul {
+    list-style: none;
+    padding-left: 0%;
+}
+
+nav ul li:hover {
+    background-color: #8a7e5bc4 ;
+}
+
