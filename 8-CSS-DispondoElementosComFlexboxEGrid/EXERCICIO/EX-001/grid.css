@@ -1,0 +1,22 @@
+.corpo {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+}
+
+.cabecalho {
+    grid-column: span 3;
+}
+
+.lateral {
+    grid-row: span 3;
+}
+
+.meio {
+    grid-row: span 3;
+}
+
+.direita-baixo {
+    grid-row: span 2;
+}
+
